@@ -3,8 +3,8 @@ root:
   - wStateSession.out
 consistency:
   ../will.yml: &ref_0
-    hash: 3a21d206b498f3294d902097ebb5c466
-    size: 7088
+    hash: 2be73676b49bdb56564536472061a3d4
+    size: 6947
 module:
   wStateSession.out:
     about:
@@ -384,9 +384,6 @@ module:
           content: npm
         inherit:
           - module.export
-      npm.publish:
-        opts:
-          shell: npm publish
       npm.generate.debug.raw:
         opts:
           entryPath: 'path::entry.out.*=1'
@@ -722,12 +719,6 @@ module:
           - 'step::doc.export'
         criterion:
           content: doc
-          export: 1
-      npm.export:
-        steps:
-          - 'step::npm.publish'
-        criterion:
-          content: npm
           export: 1
       export:
         steps:
@@ -1094,9 +1085,6 @@ module:
           content: npm
         inherit:
           - module.export
-      npm.publish:
-        opts:
-          shell: npm publish
       npm.generate.debug.raw:
         opts:
           entryPath: 'path::entry.out.*=1'
@@ -1433,12 +1421,6 @@ module:
         criterion:
           content: doc
           export: 1
-      npm.export:
-        steps:
-          - 'step::npm.publish'
-        criterion:
-          content: npm
-          export: 1
       export:
         steps:
           - 'build::proto.export'
@@ -1496,5 +1478,5 @@ module:
           - 'build::npm'
     consistency:
       ../will.yml:
-        hash: 3a21d206b498f3294d902097ebb5c466
-        size: 7088
+        hash: 2be73676b49bdb56564536472061a3d4
+        size: 6947
