@@ -3,8 +3,8 @@ root:
   - wStateSession.out
 consistency:
   ../will.yml: &ref_0
-    hash: 2be73676b49bdb56564536472061a3d4
-    size: 6947
+    hash: fa7670e51e58af5c328ac5566b937152
+    size: 6955
 module:
   wStateSession.out:
     about:
@@ -1478,5 +1478,5 @@ module:
           - 'build::npm'
     consistency:
       ../will.yml:
-        hash: 2be73676b49bdb56564536472061a3d4
-        size: 6947
+        hash: fa7670e51e58af5c328ac5566b937152
+        size: 6955
